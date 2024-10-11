@@ -1,8 +1,12 @@
 
 ```
-pip install gdown
 sudo yum install postgresql15
 sudo yum -y install telnet
+```
+Download sql file from google drive
+```
+pip install gdown
+gdown https://drive.google.com/uc?id=1JohcltGTaxxxxxxxxxxxxxxxxxx
 ```
 
 ```
