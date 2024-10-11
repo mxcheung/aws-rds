@@ -2,7 +2,9 @@
 
 ## Objectives
 - install Postgres via RDS
+- secrets manager to store postgres password
 - install PSql client (cloud 9)
+- install telnet (cloud 9)
 - download sql file from google drive (cloud 9)
 
 ```
