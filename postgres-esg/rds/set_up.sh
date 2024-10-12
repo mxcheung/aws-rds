@@ -52,7 +52,7 @@ DATABASE_SG_ID=$(aws ec2 describe-security-groups --filters Name=group-name,Valu
 
 echo $DATABASE_SG_ID
 
-echo "Allow MySQL access from VPC ->aws ec2 authorize-security-group-ingress"
+echo "Allow Postgres access from VPC ->aws ec2 authorize-security-group-ingress"
 
 
 DB_SECURITY_GROUP_ID_INGRESS=$(aws ec2 authorize-security-group-ingress \
