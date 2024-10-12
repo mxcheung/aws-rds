@@ -19,6 +19,9 @@ export PGPASSWORD=$(aws secretsmanager get-secret-value --secret-id $SECRET_ARN 
 gdown https://drive.google.com/uc?id=1JohcltGTauLYngVt-BcgwfegB0uXuRXg
 psql -h $RDS_ENDPOINT -d postgres -U postgres -p 5432 < ESGMark_database.sql
 
+# select * from public.api_companymodel limit 10;
+
+
 
 
 
