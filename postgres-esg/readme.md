@@ -57,3 +57,9 @@ cd /home/ec2-user/environment/aws-rds/postgres-esg/cloud_9/
 . ./set_up.sh
 
 ```
+
+To test postgres
+```
+psql -h $RDS_ENDPOINT -d postgres -U postgres -p 5432 
+select * from public.api_companymodel limit 10;
+```
