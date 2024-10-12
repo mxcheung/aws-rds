@@ -42,3 +42,12 @@ secret_access_key=$(jq -r '.AccessKey.SecretAccessKey' access-key-response.json)
 echo "AccessKeyId: $access_key_id"
 echo "SecretAccessKey: $secret_access_key"
 ```
+
+
+Using cloud 9
+```
+export aws_access_key_id=AKIAVTSSZZZZZZZZZZZZZZ
+export aws_secret_access_key=HqQCiMHHxCZZZZZZZZZZZZZZZZZ
+git clone https://github.com/mxcheung/aws-rds.git
+cd /home/ec2-user/environment/aws-rds/postgres-esg/user_credentials/set_up.sh
+```
