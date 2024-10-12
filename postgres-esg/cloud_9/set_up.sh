@@ -16,8 +16,8 @@ echo "Secret ARN: $SECRET_ARN"
 echo "Secret Name: $SECRET_NAME"
 
 export PGPASSWORD=$(aws secretsmanager get-secret-value --secret-id $SECRET_ARN --query 'SecretString' --output text | jq -r '.password')
-
-
+gdown https://drive.google.com/uc?id=1JohcltGTauLYngVt-BcgwfegB0uXuRXg
+psql -h $RDS_ENDPOINT -d postgres -U postgres -p 5432 < ESGMark_database.sql
 
 
 
