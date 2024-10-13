@@ -28,7 +28,7 @@ INGRESS_OUTPUT=$(aws ec2 authorize-security-group-ingress \
     --protocol tcp \
     --port 22 \
     --cidr 0.0.0.0/0)
-    
+
 EC2_RUN_OUTPUT=$(aws ec2 run-instances \
     --image-id ami-0fff1b9a61dec8a5f \
     --count 1 \
