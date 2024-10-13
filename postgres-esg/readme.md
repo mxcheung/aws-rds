@@ -53,6 +53,8 @@ cd /home/ec2-user/environment/aws-rds/postgres-esg/user_credentials/
 . ./set_up.sh
 cd /home/ec2-user/environment/aws-rds/postgres-esg/rds/
 . ./set_up.sh
+cd /home/ec2-user/environment/aws-rds/postgres-esg/ec2/
+. ./set_up.sh
 cd /home/ec2-user/environment/aws-rds/postgres-esg/cloud_9/
 . ./set_up.sh
 
