@@ -67,9 +67,11 @@ select * from public.api_companymodel limit 10;
 
 Using ec2
 ```
+sudo yum -y install git
 export aws_access_key_id=AKIAVTSSZZZZZZZZZZZZZZ
 export aws_secret_access_key=HqQCiMHHxCZZZZZZZZZZZZZZZZZ
 git clone https://github.com/mxcheung/aws-rds.git
-cd /home/ec2-user/environment/aws-rds/postgres-esg/user_credentials/
+cd /home/ec2-user/aws-rds/postgres-esg/user_credentials/
 . ./set_up.sh
+
 ```
