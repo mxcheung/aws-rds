@@ -71,6 +71,8 @@ Using ec2
 ```
 export aws_access_key_id=AKIAVTSSZZZZZZZZZZZZZZ
 export aws_secret_access_key=HqQCiMHHxCZZZZZZZZZZZZZZZZZ
+export EGS_SOURCE_FOLDER_ID=1ebC_Glwzzzzzzzzzzzzzzzzzzzzzzzzz
+gdown --folder https://drive.google.com/drive/folders/$EGS_SOURCE_FOLDER_ID
 sudo yum -y install git
 git clone https://github.com/mxcheung/aws-rds.git
 cd /home/ec2-user/aws-rds/postgres-esg/user_credentials/
