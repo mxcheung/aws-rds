@@ -17,3 +17,8 @@ pip3 install django
 cd /home/ec2-user
 django-admin startproject myproject
 cd myproject
+
+# Start and enable Nginx:
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
