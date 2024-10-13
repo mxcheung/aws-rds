@@ -6,6 +6,7 @@ VPC_ID=$(aws ec2 describe-vpcs --query "Vpcs[?Tags[?Key=='Name' && Value=='Your 
 
 sudo yum update -y
 sudo yum -y install python3-pip python3-devel nginx git
+sudo yum install nodejs npm
 
 # Install google drive
 pip3 install gdown
