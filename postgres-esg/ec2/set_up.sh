@@ -29,6 +29,8 @@ SSH_INGRESS_OUTPUT=$(aws ec2 authorize-security-group-ingress \
     --port 22 \
     --cidr 0.0.0.0/0)
 
+# Ensure the EC2 instance security group allows inbound traffic on port 80 (HTTP) and 443 (HTTPS if needed).
+
 # Add an inbound rule to allow HTTP from anywhere
 HTTP_INGRESS_OUTPUT=$(aws ec2 authorize-security-group-ingress \
     --group-id $EC2_SECURITY_GROUP_ID \
@@ -36,6 +38,12 @@ HTTP_INGRESS_OUTPUT=$(aws ec2 authorize-security-group-ingress \
     --port 80 \
     --cidr 0.0.0.0/0)
 
+# Add an inbound rule to allow HTTPS from anywhere
+HTTPS_INGRESS_OUTPUT=$(aws ec2 authorize-security-group-ingress \
+    --group-id $EC2_SECURITY_GROUP_ID \
+    --protocol tcp \
+    --port 443 \
+    --cidr 0.0.0.0/0)
     
 
 EC2_RUN_OUTPUT=$(aws ec2 run-instances \
