@@ -12,7 +12,7 @@ echo $RDS_ENDPOINT
 telnet $RDS_ENDPOINT 5432
 
 # Get the secret ARN
-SECRET_ARN=$(aws rds describe-db-instances --db-instance-identifier wordpress --query 'DBInstances[0].MasterUserSecret.SecretArn' --output text)
+SECRET_ARN=$(aws rds describe-db-instances --db-instance-identifier esg --query 'DBInstances[0].MasterUserSecret.SecretArn' --output text)
 SECRET_NAME=$(aws secretsmanager describe-secret --secret-id $SECRET_ARN --query 'Name' --output text)
 echo "Secret ARN: $SECRET_ARN"
 echo "Secret Name: $SECRET_NAME"
