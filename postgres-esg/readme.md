@@ -76,10 +76,16 @@ cd /home/ec2-user/aws-rds/postgres-esg/user_credentials/
 
 ```
 
-Using browser
-```
-http://3.86.146.93/
+## Using browser
 
+```
+in ec2 instance:
+   - Nginx enabled
+   - security group allows http traffic
+```
+input: http://3.86.146.xxx/
+expected output
+```
 Welcome to nginx!
 If you see this page, the nginx web server is successfully installed and working. Further configuration is required.
 ```
