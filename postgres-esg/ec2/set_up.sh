@@ -21,14 +21,13 @@ EC2_SECURITY_GROUP_ID=$(aws ec2 create-security-group \
 
 echo "Add  app-sg inbound rule allow HTTP traffic from ALBAllowHttp --> aws ec2 authorize-security-group-ingress"
 
-# Add an inbound rule to allow HTTP traffic from ALBAllowHttp
+
+# Add an inbound rule to allow SSH from anywhere
 INGRESS_OUTPUT=$(aws ec2 authorize-security-group-ingress \
     --group-id $EC2_SECURITY_GROUP_ID \
     --protocol tcp \
     --port 22 \
-    --source-group $ALB_ALLOW_HTTP_SG_ID)
-
-
+    --cidr 0.0.0.0/0)
     
 EC2_RUN_OUTPUT=$(aws ec2 run-instances \
     --image-id ami-0fff1b9a61dec8a5f \
