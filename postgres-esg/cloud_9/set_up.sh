@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo yum -y install telnet
-sudo yum install postgresql15
+sudo yum install -y postgresql15
 pip install gdown
 gdown https://drive.google.com/uc?id=1JohcltGTauLYngVt-BcgwfegB0uXuRXg
 
