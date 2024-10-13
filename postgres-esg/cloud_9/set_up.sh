@@ -3,7 +3,7 @@
 sudo yum -y install telnet
 sudo yum install -y postgresql15
 pip install gdown
-gdown https://drive.google.com/uc?id=1JohcltGTauLYngVt-BcgwfegB0uXuRXg
+gdown https://drive.google.com/uc?id=1JohcltGTazzzzzzzzzzzzzzzzzz
 
 echo "aws rds wait db-instance-available"
 WAIT_RDS_OUTPUT=$(aws rds wait db-instance-available --db-instance-identifier esg) 
