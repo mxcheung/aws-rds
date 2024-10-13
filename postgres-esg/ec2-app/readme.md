@@ -9,6 +9,9 @@ export aws_secret_access_key=HqQCiMHHxCZZZZZZZZZZZZZZZZZ
 git clone https://github.com/mxcheung/aws-rds.git
 cd /home/ec2-user/aws-rds/postgres-esg/user_credentials/
 . ./set_up.sh
+cd /home/ec2-user/aws-rds/postgres-esg/ec2-app/
+. ./set_up.sh
+
 ```
 
 ```
