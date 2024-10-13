@@ -3,8 +3,10 @@
 sudo yum -y install telnet
 sudo yum install postgresql15
 pip install gdown
+gdown https://drive.google.com/uc?id=1JohcltGTauLYngVt-BcgwfegB0uXuRXg
 
-WAIT_RDS_OUTPUT=$(aws rds wait db-instance-available --db-instance-identifier wordpress) 
+echo "aws rds wait db-instance-available"
+WAIT_RDS_OUTPUT=$(aws rds wait db-instance-available --db-instance-identifier esg) 
 RDS_ENDPOINT=$(aws rds describe-db-instances --db-instance-identifier esg --query 'DBInstances[0].Endpoint.Address' --output text)
 echo $RDS_ENDPOINT
 telnet $RDS_ENDPOINT 5432
@@ -16,7 +18,6 @@ echo "Secret ARN: $SECRET_ARN"
 echo "Secret Name: $SECRET_NAME"
 
 export PGPASSWORD=$(aws secretsmanager get-secret-value --secret-id $SECRET_ARN --query 'SecretString' --output text | jq -r '.password')
-gdown https://drive.google.com/uc?id=1JohcltGTauLYngVt-BcgwfegB0uXuRXg
 psql -h $RDS_ENDPOINT -d postgres -U postgres -p 5432 < ESGMark_database.sql
 
 # select * from public.api_companymodel limit 10;
