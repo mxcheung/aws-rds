@@ -5,7 +5,7 @@ sudo yum install postgresql15
 pip install gdown
 
 WAIT_RDS_OUTPUT=$(aws rds wait db-instance-available --db-instance-identifier wordpress) 
-RDS_ENDPOINT=$(aws rds describe-db-instances --db-instance-identifier wordpress --query 'DBInstances[0].Endpoint.Address' --output text)
+RDS_ENDPOINT=$(aws rds describe-db-instances --db-instance-identifier esg --query 'DBInstances[0].Endpoint.Address' --output text)
 echo $RDS_ENDPOINT
 telnet $RDS_ENDPOINT 5432
 
