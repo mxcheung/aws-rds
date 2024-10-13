@@ -22,3 +22,10 @@ cd myproject
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
+# Set up Gunicorn to run as a service on Amazon Linux. Create a systemd service file:
+sudo cp /home/ec2-user/aws-rds/postgres-esg/ec2-app/etc/systemd/system/gunicorn.service  /etc/systemd/system/
+
+# Enable and start Gunicorn:
+sudo systemctl start gunicorn
+sudo systemctl enable gunicorn
+
