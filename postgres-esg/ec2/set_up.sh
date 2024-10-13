@@ -20,7 +20,7 @@ EC2_SECURITY_GROUP_ID=$(aws ec2 create-security-group \
     --output text)
 
 EC2_RUN_OUTPUT=$(aws ec2 run-instances \
-    --image-id ami-0abcdef1234567890 \
+    --image-id ami-0fff1b9a61dec8a5f \
     --count 1 \
     --instance-type t3.small \
     --key-name MyKeyPair \
