@@ -22,7 +22,7 @@ EC2_SECURITY_GROUP_ID=$(aws ec2 create-security-group \
 EC2_RUN_OUTPUT=$(aws ec2 run-instances \
     --image-id ami-0abcdef1234567890 \
     --count 1 \
-    --instance-type t2.micro \
+    --instance-type t3.small \
     --key-name MyKeyPair \
     --security-group-ids $EC2_SECURITY_GROUP_ID \
     --subnet-id $public_subnet_a \
