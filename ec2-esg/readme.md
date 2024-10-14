@@ -21,4 +21,7 @@ sudo docker-compose up --build -d
 ```
 sudo yum -y install git
 git clone https://github.com/mxcheung/aws-rds.git
+cd /home/ec2-user/aws-rds/ec2-esg/
+. ./set_up.sh
+
 ```
