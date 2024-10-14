@@ -32,5 +32,6 @@ touch .env
 sudo docker network create my_network
 sudo docker-compose up --build -d
 
+cd /home/ec2-user/
 export PGPASSWORD=postgres
 psql -U postgres postgres -h localhost < ESGMark_database.sql
