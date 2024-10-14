@@ -29,6 +29,8 @@ unzip capstone-project-3900h18bnifflers-main-20241013T063547Z-001.zip
 cd /home/ec2-user/capstone-project-3900h18bnifflers-main
 touch .env
 
+sudo docker network create my_network
+sudo docker-compose up --build -d
 
 export PGPASSWORD=postgres
 psql -U postgres postgres -h localhost < ESGMark_database.sql
