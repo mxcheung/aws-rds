@@ -21,6 +21,7 @@ cd /home/ec2-user/aws-rds/ec2-esg/
 ```
 
 ```
+sudo docker network create my_network
 sudo docker-compose up --build -d
 ```
 
