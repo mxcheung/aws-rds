@@ -26,6 +26,8 @@ docker-compose version
 
 cd /home/ec2-user/
 unzip capstone-project-3900h18bnifflers-main-20241013T063547Z-001.zip
+cd /home/ec2-user/capstone-project-3900h18bnifflers-main
+touch .env
 
 
 export PGPASSWORD=postgres
