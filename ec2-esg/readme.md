@@ -8,7 +8,7 @@ t3.small or t3.medium
 ```
 
 
-## quick staart
+## quick start
 
 ```
 scp -i /drives/c/max/aws/MyKeyPair.pem /drives/c/esg/parns/capstone-project-3900h18bnifflers-main-20241013T063547Z-001.zip ec2-user@ec2-54-234-111-22.compute-1.amazonaws.com:/home/ec2-user/
