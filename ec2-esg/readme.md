@@ -17,3 +17,8 @@ tmpfs               194708       0    194708   0% /run/user/1000
 ```
 sudo docker-compose up --build -d
 ```
+
+```
+sudo yum -y install git
+git clone https://github.com/mxcheung/aws-rds.git
+```
