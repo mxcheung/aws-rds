@@ -12,3 +12,8 @@ tmpfs               973544       0    973544   0% /tmp
 /dev/nvme0n1p128     10202    1310      8892  13% /boot/efi
 tmpfs               194708       0    194708   0% /run/user/1000
 ```
+
+
+```
+sudo docker-compose up --build -d
+```
