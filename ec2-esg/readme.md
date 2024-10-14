@@ -35,6 +35,10 @@ cd /home/ec2-user/aws-rds/ec2-esg/
 
 ```
 
+[ec2-54-235-53-79.compute-1.amazonaws.com](http://ec2-54-235-53-79.compute-1.amazonaws.com/register)
+
+Security and Commodity Exchanges
+
 ```
 sudo docker network create my_network
 sudo docker-compose up --build -d
