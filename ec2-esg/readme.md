@@ -10,6 +10,17 @@ t3.small or t3.medium
 
 ## quick start
 
+https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#LaunchInstances:
+Instance Type:
+   - t3.medium
+Key pair (login) 
+   - MyKeyPair.pem
+Network settings
+  - Allow SSH traffic from
+  - Allow HTTPS traffic from the internet
+  - Allow HTTP traffic from the internet
+Configure storage
+  - 30gb
 ```
 scp -i /drives/c/max/aws/MyKeyPair.pem /drives/c/esg/parns/capstone-project-3900h18bnifflers-main-20241013T063547Z-001.zip ec2-user@ec2-54-234-111-22.compute-1.amazonaws.com:/home/ec2-user/
 ssh -i "MyKeyPair.pem" ec2-user@ec2-54-234-111-22.compute-1.amazonaws.com
