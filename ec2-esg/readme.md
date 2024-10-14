@@ -25,3 +25,9 @@ cd /home/ec2-user/aws-rds/ec2-esg/
 . ./set_up.sh
 
 ```
+export PGPASSWORD=postgres
+psql -U postgres postgres -h localhost < ESGMark_database.sql
+
+```
+
+```
