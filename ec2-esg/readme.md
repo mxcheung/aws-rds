@@ -1,4 +1,11 @@
-esg using docker
+# esg using docker
+
+## ec
+
+```
+t3.small or t3.medium
+30 gb
+```
 
 ```
 Last login: Mon Oct 14 11:37:19 2024 from 49.176.90.31
