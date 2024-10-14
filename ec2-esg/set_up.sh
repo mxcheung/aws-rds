@@ -25,7 +25,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose version
 
 cd /home/ec2-user/
-capstone-project-3900h18bnifflers-main-20241013T063547Z-001.zip
+unzip capstone-project-3900h18bnifflers-main-20241013T063547Z-001.zip
 
 
 export PGPASSWORD=postgres
