@@ -32,6 +32,11 @@ touch .env
 sudo docker network create my_network
 sudo docker-compose up --build -d
 
-cd /home/ec2-user/
-export PGPASSWORD=postgres
-psql -U postgres postgres -h localhost < ESGMark_database.sql
+echo "load data into postgres"
+cd /home/ec2-user/capstone-project-3900h18bnifflers-main/
+. ./set_up.sh
+
+
+# cd /home/ec2-user/
+# export PGPASSWORD=postgres
+# psql -U postgres postgres -h localhost < ESGMark_database.sql
