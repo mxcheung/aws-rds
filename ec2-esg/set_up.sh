@@ -26,7 +26,7 @@ docker-compose version
 
 cd /home/ec2-user/
 unzip capstone-project-3900h18bnifflers-main-20241013T063547Z-001.zip
-cd /home/ec2-user//home/ec2-user/capstone-project-3900h18bnifflers-main-20241013T063547Z-001/
+cd /home/ec2-user/capstone-project-3900h18bnifflers-main-20241013T063547Z-001/
 touch .env
 
 sudo docker network create my_network
