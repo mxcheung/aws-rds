@@ -34,7 +34,7 @@ sudo docker-compose up --build -d
 
 echo "load data into postgres"
 cd /home/ec2-user/capstone-project-3900h18bnifflers-main/
-. ./set_up.sh
+. ./data_load.sh
 
 
 # cd /home/ec2-user/
